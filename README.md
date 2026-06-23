@@ -44,7 +44,25 @@ VBSdb utilized **ADO (ActiveX Data Objects)** and **ADOX (ActiveX Data Objects E
 *   **Autoincrement Parsing**: Automated discovery of primary key identity fields across databases to prevent editing auto-assigned primary keys.
 *   **Date Processing**: Specialized date parsing and locale-aware date-formatting rules.
 
-### 5. Multi-Language Localization
+### 5. Search & Filter System
+
+The VBSdb architecture includes a powerful, developer-configurable search and field-level filtering mechanism that dynamically builds SQL `WHERE` clauses from user input (see [inc_vbsDbSetFilter.asp](file:///home/mionome/Documents/yamma/VBSdb/inc_vbsDbSetFilter.asp)):
+
+* **Dynamic WHERE Clause Generation**: Intercepts POST requests from the search form and constructs safe, type-aware SQL `WHERE` clauses for string, numeric, date, and boolean fields.
+* **Per-Field Search Operators**: Developers can define specific comparison operators (`=`, `<`, `<=`, `>`, `>=`) on a per-field basis using the `SearchOperators` property, enabling range queries and advanced lookups without custom SQL (see [inc_SearchOperators.asp](file:///home/mionome/Documents/yamma/VBSdb/inc_SearchOperators.asp)).
+* **Field Aliasing**: Map user-facing search labels to physical database columns via `SearchAliasFields`, allowing display names that differ from underlying schema names (see [inc_SearchAliasFields.asp](file:///home/mionome/Documents/yamma/VBSdb/inc_SearchAliasFields.asp)).
+* **Search Field Exclusion**: Hide sensitive or non-searchable fields from the search interface using `SearchHideFields` without altering the database schema (see [inc_SearchHideFields.asp](file:///home/mionome/Documents/yamma/VBSdb/inc_SearchHideFields.asp)).
+* **Visual Feedback**: Included UI assets for search and filter removal actions (`search.gif`, `removeFilter.gif`) provide a native, polished experience in the generated admin interface.
+
+### 6. Custom HTML Templating System
+
+While VBSdb’s default renderer produces clean, functional grids and forms out of the box, the engine also supports full HTML template overrides for complete visual control (see [inc_FormTemplate.asp](file:///home/mionome/Documents/yamma/VBSdb/inc_FormTemplate.asp), [inc_GridTemplate.asp](file:///home/mionome/Documents/yamma/VBSdb/inc_GridTemplate.asp), and [inc_InputTemplates.asp](file:///home/mionome/Documents/yamma/VBSdb/inc_InputTemplates.asp)):
+
+* **Grid Row Templates**: Supply an external HTML file containing a `<VbsDbGridRow>...</VbsDbGridRow>` block. VBSdb parses the template, extracts the row structure, and injects field data via `<VbsDbFieldValue>FieldName</VbsDbFieldValue>` placeholders for every record in the result set.
+* **Form Templates**: Override the single-record view/edit form using a standalone HTML template. Any database field can be embedded with `<VbsDbFieldValue>FieldName</VbsDbFieldValue>` to display read-only data or rendered input controls.
+* **Input Screen Templates**: Apply distinct custom layouts to Add, Update, Delete, and Search screens using `EditAddTemplate`, `EditUpdateTemplate`, `EditDeleteTemplate`, and `SearchTemplate`. These templates support dynamic placeholders for field values (`<VbsDbFieldValue>`), raw parameters (`<VbsDbFieldParameter>`), and action buttons (`<VbsDbInputSubmit>`, `<VbsDbInputReset>`, `<VbsDbInputCancel>`), enabling full redesign of the data-entry workflow without modifying engine code.
+
+### 7. Multi-Language Localization
 Out of the box, VBSdb supported localization across 9 languages. It mapped all labels, navigation text, validation warnings, and titles based on the system configuration:
 *   🇩🇰 Danish &nbsp;|&nbsp; 🇳🇱 Dutch &nbsp;|&nbsp; 🇬🇧 English &nbsp;|&nbsp; 🇫🇷 French &nbsp;|&nbsp; 🇩🇪 German &nbsp;|&nbsp; 🇬🇷 Greek &nbsp;|&nbsp; 🇮🇹 Italian &nbsp;|&nbsp; 🇵🇹 Portuguese &nbsp;|&nbsp; 🇪🇸 Spanish
 *   Check the language packs folder for implementation details: [languages/](file:///home/mionome/Documents/yamma/VBSdb/languages)

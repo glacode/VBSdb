@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/License-Open_Source-green.svg)](#)
 
 > [!NOTE]
-> **VBSdb** was a commercial software product developed, packaged, and sold between 2001 and 2003 via **`vbsdb.com`**. This repository contains the complete codebase of **VBSdb Pro (Revision 2003.12)**, now published as open source to showcase early web framework development, security-first engineering, and software commercialization.
+> **VBSdb** was a commercial software product I developed, packaged, and sold between 2001 and 2003 via **`vbsdb.com`**. This repository contains the complete codebase of **VBSdb Pro (Revision 2003.12)**, now published as open source to showcase early web framework development, security-first engineering, and software commercialization.
 
 ---
 

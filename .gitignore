@@ -1,0 +1,24 @@
+# == Windows System Junk ==
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# == Text Editor / IDE Templates ==
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln.docuser
+
+# == VBScript / WSH / Office Macro Specifics ==
+# Ignore temporary backup files generated if editing VBS via Office/Excel/Access
+~$*
+*.tmp
+*.log
+
+# If you compile or encode your VBScripts into executables
+*.exe
+*.dll
+
+# Custom ignore
+VBSdb-Pro.prerelease.2002.12.zip

@@ -1,0 +1,4 @@
+<%
+  const vbsDbVbLongDate = 1
+%>
+

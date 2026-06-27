@@ -1,0 +1,9 @@
+<!--#include file="inc_english.asp"-->
+<!--#include file="inc_french.asp"-->
+<!--#include file="inc_italian.asp"-->
+<!--#include file="inc_portuguese.asp"-->
+<!--#include file="inc_spanish.asp"-->
+<!--#include file="inc_german.asp"-->
+<!--#include file="inc_dutch.asp"-->
+<!--#include file="inc_greek.asp"-->
+<!--#include file="inc_danish.asp"-->

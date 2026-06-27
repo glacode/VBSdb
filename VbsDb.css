@@ -1,0 +1,248 @@
+/******************************************************************************/
+/*                            Grid related attributes                         */
+/******************************************************************************/
+#GridBorders
+{
+    BACKGROUND-COLOR: #d3d3d3;
+}
+#Grid
+{
+    /*WIDTH: 200px; uncomment this to fix the Grid to a constant width */
+}
+.GridEditColumn
+{
+    BACKGROUND-COLOR: #E9E8E4;
+    COLOR: BLUE;
+}
+.GridIndex
+{
+    BACKGROUND-COLOR: #E9E8E4;
+    COLOR: BLUE;
+}
+TH.GridHeader
+{
+    COLOR: BLUE;
+    BACKGROUND-COLOR: #E9E8E4;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: 600;
+}
+A.GridHeader
+{
+    COLOR: BLUE;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: 600;
+    TEXT-DECORATION: underline;
+}
+A.GridHeader:HOVER
+{
+    COLOR: red;
+}
+A.GridHeader:VISITED
+{
+}
+A.GridHeader:ACTIVE
+{
+}
+.GridUnselectedIndex
+{
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: 600;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: underline;
+}
+.GridSelectedIndex
+{
+    COLOR: #FFFFFF;
+    BACKGROUND-COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: 600;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: underline;
+}
+.GridOddRowUnselected
+{
+    BACKGROUND-COLOR: #FFFFFF;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: normal;
+}
+.GridOddRowSelected
+{
+    BACKGROUND-COLOR: #FFFFFF;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: normal;
+}
+.GridEvenRowUnselected
+{
+    BACKGROUND-COLOR: #F7F3F7;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: normal;
+}
+.GridEvenRowSelected
+{
+    BACKGROUND-COLOR: #F7F3F7;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: normal;
+}
+#GridTemplate
+{
+    BORDER-COLLAPSE: collapse;
+}
+
+/******************************************************************************/
+/*                          Form related attributes                           */
+/******************************************************************************/
+#FormBorders
+{
+    BACKGROUND-COLOR: #d3d3d3;
+}
+TABLE#Form
+{
+    /*WIDTH: 300px; uncomment this to fix the Form to a constant width */
+}
+TR.Form
+{
+}
+.FormLeftColumn
+{
+    BACKGROUND-COLOR: #E9E8E4;
+    COLOR: BLUE;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: 600;
+    TEXT-ALIGN: right;
+    /* WIDTH: 100px; uncomment this to fix the Form left column to a constant width */
+}
+.FormRightColumn
+{
+    BACKGROUND-COLOR: #FFFFFF;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: normal;
+    TEXT-ALIGN: left;
+}
+
+/******************************************************************************/
+/*                          View related attributes                           */
+/******************************************************************************/
+TD.ViewNavigation
+{
+    BACKGROUND-COLOR: #D3D3D3;
+    COLOR: #9C9A9C;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: normal;
+    TEXT-ALIGN: center;
+    VERTICAL-ALIGN: center;
+}
+A.ViewNavigation
+{
+    COLOR: 000000;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: normal;
+}
+#ViewPositionBorders
+{
+    BACKGROUND-COLOR: #d3d3d3;
+}
+#ViewPosition
+{
+    BACKGROUND-COLOR: #ffffff;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 10px;
+    FONT-WEIGHT: normal;
+}
+.ViewMessage
+{
+    BACKGROUND-COLOR: #ffffff;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 12px;
+    TEXT-ALIGN: center;
+    WIDTH: 100%;
+}
+
+/******************************************************************************/
+/*                          Input related attributes                          */
+/******************************************************************************/
+#InputTitle
+{
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 16px;
+    FONT-WEIGHT: bold;
+}
+#InputBorders
+{
+    BACKGROUND-COLOR: #d3d3d3;
+}
+.InputHeaders
+{
+    BACKGROUND-COLOR: #E9E8E4;
+    COLOR: BLUE;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: 600;
+    TEXT-ALIGN: center;
+}
+#InputForm
+{
+    /*WIDTH: 200px; uncomment this to fix the Input Form to a constant width */
+}
+.InputLeftColumn
+{
+    BACKGROUND-COLOR: #ffffff;
+    COLOR: BLUE;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: 600;
+    TEXT-ALIGN: right;
+}
+.InputRightColumn
+{
+    BACKGROUND-COLOR: #ffffff;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: normal;
+    TEXT-ALIGN: left;
+}
+.InputCancel
+{
+    BACKGROUND-COLOR: #ffffff;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: normal;
+    TEXT-ALIGN: center;
+}
+.InputCheckBoxForIE
+{
+    MARGIN-LEFT: -4px;
+}
+.InputCheckBoxForNonIE
+{
+    MARGIN-LEFT: 0px;
+}
+#InputSubmitReset
+{
+    BACKGROUND-COLOR: #ffffff;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, Sans-serif;
+    TEXT-ALIGN: center;
+}
